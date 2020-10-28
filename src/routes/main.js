@@ -26,5 +26,8 @@ router.put('/attraction',
 // update an existing attraction in the database
 router.delete('/attraction/:id', mainController.deleteAttraction)
 
+// upload image to static folder public/img
+router.post('/uplImg', mainController.uploadImageFile)
+
 // export our router to be mounted by the parent application
 module.exports = router
